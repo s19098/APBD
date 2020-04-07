@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using CW4.Services;
 
-namespace CW4.Controllers
+namespace ZAD4.Controllers
 {
     [ApiController]
     [Route("api/students")]
