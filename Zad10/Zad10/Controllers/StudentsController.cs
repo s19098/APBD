@@ -1,33 +1,47 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Zad10.Models;
+using Zad10.DTOs.Requests;
 using Zad10.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 
 namespace Zad10.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/students")]
     public class StudentsController : ControllerBase
     {
-        private readonly IStudentDbService _server;
+        private readonly IStudentsDbService _dbService;
 
-        public IConfiguration Configuration { get; set; }
-
-        public StudentsController(IStudentDbService context, IConfiguration configuration)
+        public StudentsController(IStudentsDbService _dbService)
         {
-            _server = context;
-            Configuration = configuration;
+            this._dbService = _dbService;
         }
 
         [HttpGet]
-        public IActionResult GetStudentsList()
+        public IActionResult GetStudent()
         {
-            return Ok(_server.GetStudents());
+            return Ok(_dbService.GetStudents());
+        }
+
+        [HttpPut]
+        public IActionResult UpdateStudent(UpdateStudentRequest request)
+        {
+            var result = _dbService.UpdateStudent(request);
+            if (result.Equals("OK"))
+                return Ok("Student was updated");
+
+            return NotFound();
+        }
+
+        [HttpDelete("{index}")]
+        public IActionResult DeleteStudent(string index)
+        {
+            var result = _dbService.DeleteStudent(index);
+            if (result.Equals("OK"))
+                return Ok("Student was deleted");
+            else if (result.Equals("Bad Request"))
+                return BadRequest();
+            else
+                return NotFound();
         }
     }
 }

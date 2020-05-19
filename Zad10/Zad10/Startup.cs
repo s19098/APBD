@@ -6,6 +6,8 @@ using Zad10.Models;
 using Zad10.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -33,6 +35,7 @@ namespace Zad10
             {
                 options.UseSqlServer("Data Source=db-mssql;Initial Catalog=s19098;Integrated Security=True");
             });
+			services.AddScoped<IStudentsDbService, EfStudentsDbService>();
             services.AddControllers();
         }
 
@@ -43,7 +46,8 @@ namespace Zad10
             {
                 app.UseDeveloperExceptionPage();
             }
-
+			app.UseHttpsRedirection();
+			
             app.UseRouting();
 
             app.UseAuthorization();
