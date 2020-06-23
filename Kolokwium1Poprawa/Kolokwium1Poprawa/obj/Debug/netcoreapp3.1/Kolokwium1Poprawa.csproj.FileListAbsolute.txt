@@ -1,0 +1,12 @@
+C:\Users\jakub\Desktop\Kolokwium1Poprawa\Kolokwium1Poprawa\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\jakub\Desktop\Kolokwium1Poprawa\Kolokwium1Poprawa\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\jakub\Desktop\Kolokwium1Poprawa\Kolokwium1Poprawa\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\jakub\Desktop\Kolokwium1Poprawa\Kolokwium1Poprawa\bin\Debug\netcoreapp3.1\Kolokwium1Poprawa.exe
+C:\Users\jakub\Desktop\Kolokwium1Poprawa\Kolokwium1Poprawa\obj\Debug\netcoreapp3.1\Kolokwium1Poprawa.csprojAssemblyReference.cache
+C:\Users\jakub\Desktop\Kolokwium1Poprawa\Kolokwium1Poprawa\obj\Debug\netcoreapp3.1\Kolokwium1Poprawa.AssemblyInfoInputs.cache
+C:\Users\jakub\Desktop\Kolokwium1Poprawa\Kolokwium1Poprawa\obj\Debug\netcoreapp3.1\Kolokwium1Poprawa.AssemblyInfo.cs
+C:\Users\jakub\Desktop\Kolokwium1Poprawa\Kolokwium1Poprawa\obj\Debug\netcoreapp3.1\Kolokwium1Poprawa.RazorTargetAssemblyInfo.cache
+C:\Users\jakub\Desktop\Kolokwium1Poprawa\Kolokwium1Poprawa\obj\Debug\netcoreapp3.1\staticwebassets\Kolokwium1Poprawa.StaticWebAssets.Manifest.cache
+C:\Users\jakub\Desktop\Kolokwium1Poprawa\Kolokwium1Poprawa\obj\Debug\netcoreapp3.1\staticwebassets\Kolokwium1Poprawa.StaticWebAssets.xml
+C:\Users\jakub\Desktop\Kolokwium1Poprawa\Kolokwium1Poprawa\obj\Debug\netcoreapp3.1\Kolokwium1Poprawa.csproj.CoreCompileInputs.cache
+C:\Users\jakub\Desktop\Kolokwium1Poprawa\Kolokwium1Poprawa\obj\Debug\netcoreapp3.1\Kolokwium1Poprawa.MvcApplicationPartsAssemblyInfo.cache
